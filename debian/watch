@@ -1,0 +1,4 @@
+version=3
+opts=\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/libebur128-$1.tar.gz/ \
+ https://github.com/jiixyj/libebur128/tags .*/v?([\d\.]+).tar.gz

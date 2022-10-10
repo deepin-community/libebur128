@@ -1,0 +1,54 @@
+Source: libebur128
+Priority: optional
+Maintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>
+Uploaders: Sebastian Ramacher <sramacher@debian.org>
+Build-Depends: debhelper-compat (= 13), cmake, pkg-config
+Standards-Version: 4.6.0
+Section: libs
+Homepage: https://github.com/jiixyj/libebur128
+Vcs-Git: https://salsa.debian.org/multimedia-team/libebur128.git
+Vcs-Browser: https://salsa.debian.org/multimedia-team/libebur128
+Rules-Requires-Root: no
+
+Package: libebur128-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libebur128-1 (= ${binary:Version}), ${misc:Depends}
+Description: implementation of the EBU R128 loudness standard (development files)
+ The European Broadcasting Union Loudness Recommendation (EBU R128) informs
+ broadcasters how they can analyze and normalize audio so that each piece of
+ audio sounds roughly the same volume to the human ear.
+ .
+ This C library provides an API which analyzes audio and outputs perceived
+ loudness. The results can then be used to normalize volume during playback.
+ This is an alternative to ReplayGain.
+ .
+ Features:
+  * Implements M, S and I modes
+  * Implements loudness range measurement (EBU - TECH 3342)
+  * True peak scanning
+  * Supports all samplerates by recalculation of the filter coefficients
+ .
+ This package contains the development files.
+
+Package: libebur128-1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: implementation of the EBU R128 loudness standard
+ The European Broadcasting Union Loudness Recommendation (EBU R128) informs
+ broadcasters how they can analyze and normalize audio so that each piece of
+ audio sounds roughly the same volume to the human ear.
+ .
+ This C library provides an API which analyzes audio and outputs perceived
+ loudness. The results can then be used to normalize volume during playback.
+ This is an alternative to ReplayGain.
+ .
+ Features:
+  * Implements M, S and I modes
+  * Implements loudness range measurement (EBU - TECH 3342)
+  * True peak scanning
+  * Supports all samplerates by recalculation of the filter coefficients
+ .
+ This package contains the shared library.

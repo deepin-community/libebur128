@@ -1,0 +1,125 @@
+libebur128 (1.2.6-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>  Wed, 18 May 2022 22:15:56 -0400
+
+libebur128 (1.2.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control: Bump Standards-Version
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 20 Sep 2021 22:14:37 +0200
+
+libebur128 (1.2.5-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Sebastian Ramacher ]
+  * New upstream release
+  * debian/control:
+    - Bump Standards-Version
+    - Set RRR: no
+    - Bump debhelper compat to 13
+  * debian/libebur128-dev.install: No longer install static library
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Fri, 05 Feb 2021 20:50:00 +0100
+
+libebur128 (1.2.4-2) unstable; urgency=medium
+
+  [ Felipe Sateler ]
+  * Change maintainer address to debian-multimedia@lists.debian.org
+  * Remove Andrew from Uploaders, as he is no longer active (Closes: #909872)
+
+  [ Sebastian Ramacher ]
+  * debian/control: Bump Standards-Version.
+  * debian/: Bump debhelper compat to 12.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 05 Jan 2019 13:16:42 +0100
+
+libebur128 (1.2.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Bump Standards-Version.
+    - Move to salsa.debian.org.
+  * debian/: Bump debhelper compat to 11.
+  * debian/copyright: Add myself.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 01 Feb 2018 18:58:27 +0100
+
+libebur128 (1.2.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control: Bump Standards-Version.
+  * debian/patches: Removed, integrated upstream.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 19 Nov 2017 12:49:09 +0100
+
+libebur128 (1.2.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Tue, 28 Feb 2017 22:45:32 +0100
+
+libebur128 (1.2.2-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 27 Feb 2017 21:10:29 +0100
+
+libebur128 (1.2.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Provide pkg-config file. (Closes: #854340)
+    - debian/patches: Add upstream patch to provide pkgconfig file.
+    - debian/libebur128-dev.install: Install pkg-config file.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Tue, 21 Feb 2017 15:08:47 +0100
+
+libebur128 (1.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/{control,compat}: Bump debhelper compat to 10.
+  * debian/control:
+    - Bump Standards-Version.
+    - Drop libspeexdsp-dev from B-D.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 06 Nov 2016 23:49:43 +0100
+
+libebur128 (1.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/libebur128-1.symbols: Update symbols.
+  * debian/control:
+    - Update Vcs-*.
+    - Bump Standards-Version to 3.9.7.
+    - Remove obsolete Pre-Depends.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 17 Feb 2016 20:06:59 +0100
+
+libebur128 (1.0.3-1) unstable; urgency=medium
+
+  * New upstream relese.
+  * debian/control: Bump Standards-Version.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 16 Jan 2016 13:34:28 +0100
+
+libebur128 (1.0.2-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes memory leak when API used improperly (Closes: #762384)
+  * Update to canonical watch file format
+  * Add Upstream-Contact to copyright
+  * Remove patches which are now shipped from upstream
+
+ -- Andrew Kelley <superjoe30@gmail.com>  Mon, 29 Sep 2014 00:03:24 +0000
+
+libebur128 (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #730129)
+
+ -- Andrew Kelley <superjoe30@gmail.com>  Tue, 18 Feb 2014 13:54:18 -0400
