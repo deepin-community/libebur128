@@ -1,8 +1,12 @@
-libebur128 (1.2.6-1) UNRELEASED; urgency=medium
+libebur128 (1.2.6-1deepin1) unstable; urgency=medium
 
+  [ Debian Multimedia Maintainers ]
   * update
 
- -- Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>  Wed, 18 May 2022 22:15:56 -0400
+  [ tunaichao ]
+  * Rebuild with LTO enabled (dpkg vendor feature optimize/lto).
+
+ -- tunaichao <tunaichao@uniontech.com>  Mon, 21 Sep 2026 15:16:38 +0800
 
 libebur128 (1.2.6-1) unstable; urgency=medium
 
